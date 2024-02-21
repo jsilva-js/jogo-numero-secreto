@@ -49,12 +49,12 @@ body::before {
     gap: 20px;
 }
 
-h1 {
+.title h1 {
     font-size: 3rem;
     color: #FFFFFF;
 }
 
-p {
+.title p {
     font-size: 1.5rem;
     color: #FFFFFF;
 }
@@ -65,7 +65,7 @@ p {
     border-radius: 8px;
     background-color: #FFF;
     border: none;
-    color: #1875E8;
+    color: #0f59b3;
     padding: 1.5rem;
     font-size: 32px;
     font-weight: 700;
