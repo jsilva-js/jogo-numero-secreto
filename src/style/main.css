@@ -59,9 +59,13 @@ body::before {
     color: #FFFFFF;
 }
 
+.interactions {
+    display: grid;
+}
+
 .input {
-    width: 100%;
-    height: 72px;
+    width: 47%;
+    height: 60px;
     border-radius: 8px;
     background-color: #FFF;
     border: none;
@@ -73,17 +77,25 @@ body::before {
     margin-top: 1.5rem;
 }
 
+h2 {
+    color: #FFFFFF;
+}
+
 .button-list {
     display: flex;
     gap: 2em;
 }
 
 .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
     color: #FFFFFF;
-    border-radius: 16px;
+    border-radius: 8px;
     background: #0f59b3;
     padding: 16px 24px;
-    width: 100%;
+    width: 80%;
     font-size: 24px;
     font-weight: 700;
     border: none;
