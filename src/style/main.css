@@ -71,7 +71,7 @@ body::before {
     border: none;
     color: #0f59b3;
     padding: 1.5rem;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
     margin-top: 1.5rem;
@@ -96,7 +96,7 @@ h2 {
     background: #0f59b3;
     padding: 16px 24px;
     width: 80%;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     border: none;
     margin-top: 2rem;
