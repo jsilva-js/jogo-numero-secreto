@@ -9,9 +9,18 @@ exibirTextoNaTela('h1', 'Jogo do número Secreto');
 exibirTextoNaTela('p', 'Adivinhe o número entre 1 e 99 para vencer o jogo');
 
 function verificarPalpite(){
-    alert(numeroSecreto);
+    let chute = document.querySelector('input').value;
+    if (chute > numeroSecreto){
+        alert(`O número secreto é menor do que ${chute}!`);
+    } else if (chute < numeroSecreto){
+        alert(`O número secreto é maior do que ${chute}!`);
+    } else if (chute == numeroSecreto){
+        alert(`Você acertou! ${chute} era o número secreto.`);
+    } else {
+        alert('Número inválido!');
+    }
 }
 
-function gerarNumeroAleatorio () {
+function gerarNumeroAleatorio() {
     return parseInt(Math.random() * 99 + 1);
 }
