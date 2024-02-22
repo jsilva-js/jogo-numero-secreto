@@ -77,10 +77,6 @@ body::before {
     margin-top: 1.5rem;
 }
 
-h2 {
-    color: #FFFFFF;
-}
-
 .button-list {
     display: flex;
     gap: 2em;
