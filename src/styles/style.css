@@ -34,8 +34,14 @@ body::before {
 }
 
 .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 2.5rem;
+    width: 42rem;
+    height: 30rem;
+    padding: 1.5rem;
     border-radius: 24px;
     border: 1px solid #1875E8;
     box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
@@ -59,6 +65,11 @@ body::before {
     color: #FFFFFF;
 }
 
+.interactions {
+    background-color: #041832;
+    width: 80%;
+}
+
 .input {
     width: 100%;
     height: 60px;
@@ -66,16 +77,17 @@ body::before {
     background-color: #FFF;
     border: none;
     color: #0f59b3;
-    padding: 1.5rem;
+    padding: 24px;
     font-size: 2rem;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
-    margin-top: 1.5rem;
+    margin-top: 24px;
 }
 
 .button-list {
     display: flex;
-    gap: 2em;
+    width: 100%;
+    gap: 20px;
 }
 
 .button {
@@ -87,9 +99,9 @@ body::before {
     border-radius: 8px;
     background: #0f59b3;
     padding: 16px 24px;
-    width: 80%;
+    width: 100%;
     font-size: 1.5rem;
     font-weight: 700;
     border: none;
-    margin-top: 2rem;
+    margin-top: 32px;
 }
