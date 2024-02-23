@@ -56,12 +56,12 @@ body::before {
 }
 
 .title h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: #FFFFFF;
 }
 
 .title p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #FFFFFF;
 }
 
@@ -86,8 +86,9 @@ body::before {
 
 .button-list {
     display: flex;
+    justify-content: center;
     width: 100%;
-    gap: 20px;
+    gap: 30px;
 }
 
 .button {
@@ -104,4 +105,20 @@ body::before {
     font-weight: 700;
     border: none;
     margin-top: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .button{
+        font-size: 16px;
+    }
+
+    .title h1 {
+        font-size: 32px
+    }
+    
+    .title p {
+        font-size: 1.5rem;
+    }
+    
 }
