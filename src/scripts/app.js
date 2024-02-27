@@ -22,9 +22,17 @@ function verificarPalpite(){
         exibirTextoNaTela('p',`O número secreto é menor do que ${chute}`);
         }
         tentativas++;
+        limparCampo();
+        
     }
 }
 
 function gerarNumeroAleatorio() {
     return parseInt(Math.random() * 99 + 1);
+}
+
+function limparCampo() {
+    chute = document.querySelector('input');
+    chute.value = '';
+    
 }
