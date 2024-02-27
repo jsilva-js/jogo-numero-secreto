@@ -15,6 +15,7 @@ function verificarPalpite(){
         let mensagemTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
         exibirTextoNaTela('h1',`Você acertou o número secreto em ${tentativas} ${mensagemTentativa}`);
         exibirTextoNaTela('p',`O número secreto é ${chute}`)
+        document.getElementById('reiniciar').removeAttribute('disabled');
     } else {
         if(chute < numeroSecreto){
         exibirTextoNaTela('p',`O número secreto é maior do que ${chute}`);
@@ -23,7 +24,6 @@ function verificarPalpite(){
         }
         tentativas++;
         limparCampo();
-        
     }
 }
 
@@ -34,5 +34,12 @@ function gerarNumeroAleatorio() {
 function limparCampo() {
     chute = document.querySelector('input');
     chute.value = '';
-    
+}
+
+function reiniciarJogo() {
+    numeroSecreto = gerarNumeroAleatorio();
+    limparCampo();
+    tentativas = 1;
+    exibirTextoNaTela('h1', 'Jogo do número Secreto');
+    exibirTextoNaTela('p', 'Adivinhe o número entre 1 e 99 para vencer o jogo');
 }
