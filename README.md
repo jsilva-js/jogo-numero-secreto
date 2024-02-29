@@ -27,6 +27,7 @@ Se vocÃª deseja contribuir para o desenvolvimento deste jogo, siga estas instruÃ
 ![Captura de Tela](./src/images/print1.png)
 ![Captura de Tela](./src/images/print2.png)
 ![Captura de Tela](./src/images/print3.png)
+![Captura de Tela](./src/images/print4.png)
 
 ## Autor
 
